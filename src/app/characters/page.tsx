@@ -10,10 +10,10 @@ export default async function Characters() {
 
   return (
     <main className="grid place-items-center p-[5%]">
-      <h1 className={`${inter.className} font-bold text-3xl mb-10`}>
+      <h1 className={`${inter.className} font-bold text-3xl my-10 lg:mt-0`}>
         Personagens
       </h1>
-      <div className="grid lg:grid-cols-2 gap-10 place-items-center">
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10 place-items-center">
         {data.results.map((character) => (
           <CharacterCard key={character.id} {...character} />
         ))}

@@ -25,9 +25,9 @@ export function CharacterCard({
   }
 
   return (
-    <div className="flex bg-[#3C3E44] min-w-[500px] drop-shadow-lg rounded-md">
+    <div className="flex flex-col lg:flex-row bg-[#3C3E44] w-[200px] lg:min-w-[500px] drop-shadow-lg rounded-md">
       <Image
-        className="rounded-md rounded-r-none"
+        className="rounded-md rounded-b-none lg:rounded-b-md lg:rounded-r-none"
         src={image}
         alt={`Picture of ${name}}`}
         width={200}
